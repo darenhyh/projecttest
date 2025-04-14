@@ -1,0 +1,9 @@
+CREATE TABLE "USER" (
+    "cust_id" INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    "name" VARCHAR(100) NOT NULL,
+    "username" VARCHAR(50) NOT NULL UNIQUE,
+    "birth" DATE NOT NULL,
+    "email" VARCHAR(100) NOT NULL UNIQUE,
+    "mobileNo" VARCHAR(20) NOT NULL,
+    "password" VARCHAR(255) NOT NULL
+);
